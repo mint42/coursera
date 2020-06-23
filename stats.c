@@ -68,8 +68,10 @@ void			print_array(unsigned char *data, unsigned int len)
 unsigned char	find_median(unsigned char *data, unsigned int len)
 {
 	unsigned char	median;
-	
-	if (len == 1)
+
+	if (len == 0)
+		median = 0;
+	else if (len == 1)
 		median = data[0];
 	else if (len % 2)
 		median = data[len / 2];
@@ -83,6 +85,8 @@ unsigned char	find_mean(unsigned char *data, unsigned int len)
 	unsigned char	mean;
 	unsigned int	total;
 
+	if (len == 0)
+		return (0);
 	total = 0;
 	for (unsigned int i = 0; i < len; i++)
 		total = total + data[i];
@@ -94,6 +98,8 @@ unsigned char	find_maximum(unsigned char *data, unsigned int len)
 {
 	unsigned char	max;
 
+	if (len == 0)
+		return (0);
 	max = data[0];
 	for (unsigned int i = 1; i < len; i++)
 	{
@@ -107,6 +113,8 @@ unsigned char	find_minimum(unsigned char *data, unsigned int len)
 {
 	unsigned char	min;
 
+	if (len == 0)
+		return (0);
 	min = data[0];
 	for (unsigned int i = 1; i < len; i++)
 	{
