@@ -25,6 +25,10 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
+#define SIZE2 (0)
+#define SIZE3 (1)
+#define SIZE4 (2)
+#define SIZE5 (5)
 
 int	 main() {
 
@@ -36,8 +40,21 @@ int	 main() {
 
   /* Other Variable Declarations Go Here */
 
+  unsigned char test2[SIZE2] = {};
+  unsigned char test3[SIZE3] = {1};
+  unsigned char test4[SIZE4] = {1, 2};
+  unsigned char test5[SIZE5] = {1, 5, 5, 3, 7};
+
   /* Statistics and Printing Functions Go Here */
   print_statistics(test, SIZE);
+  printf("\n");
+  print_statistics(test2, SIZE2);
+  printf("\n");
+  print_statistics(test3, SIZE3);
+  printf("\n");
+  print_statistics(test4, SIZE4);
+  printf("\n");
+  print_statistics(test5, SIZE5);
   return (0);
 }
 
