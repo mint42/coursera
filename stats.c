@@ -12,7 +12,8 @@
  * @file stats.c
  * @brief getting and printing stats on an array
  *
- * 	functions to 
+ * 	Functions to get various stats on an unsigned char array. Also a function
+ *	to obtain these stats and print them.
  *
  * @author Ari Reedy
  * @date 6/23/2020
