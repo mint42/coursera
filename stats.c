@@ -150,7 +150,7 @@ void			sort_array(unsigned char *data, unsigned int len)
 	{
 		key = data[i];
 		j = i - 1;
-		while (j >= 0 && data[j] > key)
+		while (j >= 0 && data[j] < key)
 		{
 			data[j + 1] = data[j];
 			--j;
