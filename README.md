@@ -16,7 +16,7 @@ Functions to implement:
 
 ```
 $> git clone https://github.com/mint42/coursera.git [name]
-$> cd coursera
+$> cd [name]
 $> gcc stats.c
 $> ./a.out
 ```
