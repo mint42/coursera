@@ -12,5 +12,15 @@ Functions to implement:
 - find_minimum()
 - sort_array()
 
-#Author
+## Getting Started
+
+```
+$> git clone https://github.com/mint42/coursera.git [name]
+$> cd coursera
+$> gcc stats.c
+$> ./a.out
+```
+
+
+## Author
 [Ari](https://www.github.com/mint42)
